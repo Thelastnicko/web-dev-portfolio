@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 // import emailjs from "@emailjs/browser";
-// import { MdOutlineEmail } from "react-icons/md";
+ import { MdOutlineEmail } from "react-icons/md";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -32,23 +32,23 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            {/* <MdOutlineEmail className="contact__option-icon" /> */}
+            <MdOutlineEmail className="contact__option-icon" /> 
             <h4>Email</h4>
             <h5>nicholasfernandino@gmail.com</h5>
-            <a href="mailto:mekomerikomg@gmail.com">Send a message</a>
+            <a href="mailto:nicholasfernandino@gmail.com">Send a message</a>
           </article>
         </div>
-        {/* <form ref={formRef} onSubmit={handleSubmit}> */}
-        {/* <input
+          <form> {/*ref={formRef} onSubmit={handleSubmit}*/}  
+         <input
             type="text"
             placeholder="Your Full Name"
-            name="user_name"
+            name="name"
             required
           />
           <input
             type="text"
             placeholder="Your Email"
-            name="user_email"
+            name="email"
             required
           />
           <textarea
@@ -60,7 +60,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-        </form> */}
+        </form> 
       </div>
     </section>
   );
